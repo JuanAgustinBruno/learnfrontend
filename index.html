@@ -1,0 +1,2879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FRONT END</title>
+    <link rel="stylesheet" href="public/normalize.css">
+    <link rel="stylesheet" href="public/interaction.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+
+
+<!----------------------FRONT END --------------------------------------------------------------->
+
+
+
+<body>
+    <!-- <nav>
+        <div id="clock"> <iframe scrolling="no" frameborder="no" clocktype="html5"
+        style="overflow:hidden;border:0;margin:0;padding:0;width:240px;height:25px;"
+        src="https://www.clocklink.com/html5embed.php?clock=018&timezone=ACST&color=gray&size=240&Title=&Message=&Target=&From=2022,1,1,0,0,0&DateFormat=yyyy / mm / dd DDD&TimeFormat=hh:mm:ss TT&Color=gray"></iframe>
+        </div>
+        <aside class="counter-container">
+            <h3>Website Counter:</h3>
+        <aside class="website-counter"></aside>
+        <button id="reset">Reset</button>
+        </aside>
+    </nav> -->
+
+    <nav class="scroll_nav">
+        <a href="#html">HTML</a>
+        <a href="#vscode">VSCODE</a>
+        <a href="#css">CSS</a>
+        <a href="#javascript">JS</a>
+        <a href="#nodejs">NODEJS</a>
+        
+    </nav>
+
+
+
+    <div class="frontend_img_container">
+        <img id="frontend_img" src="public/frontend.jpg" alt="frontend">
+    </div>
+
+    <a href="public/rome/index.html">APP ROME</a>
+
+
+
+
+
+
+    <!--HTML------------------------------------------------------------------------->
+
+
+
+
+
+    <div class="topic">
+        <h1 id="html">HTML</h1>
+
+        <div class="p">
+            <h2>Hypertext Transfer Protocol (HTTP):</h2>
+            <p>
+                Application-layer protocol for transmitting hypermedia documents,
+                such as HTML.
+                <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">Wiki: HTTP</a>
+
+            </p>
+            <form action="https://www.google.com/search" target="_blank">
+                <label for="google">Google Search:</label>
+                <input type="text" name="q" id="google" placeholder="Type here"></input>
+                <button>Go!</button>
+
+            </form>
+        </div>
+
+
+        <!----------------------------TAGS---------------------------------------------->
+
+
+        <div class="p">
+            <h2>HTML (HyperText Markup Language) the most basic building block of the Web</h2>
+
+            <div class="html1">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">HTML TAGS</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td> &lt!DOCTYPE></td>
+                        <td> Defines the document type</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lthtml></td>
+                        <td>Defines an HTML document</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lthead></td>
+                        <td> Contains metadata/information for the document</td>
+                    </tr>
+
+                    <tr>
+                        <td>&ltbody></td>
+                        <td>Defines the document's body</td>
+                    </tr>
+
+                    <tr>
+                        <td>&ltmain></td>
+                        <td>Central topic of the document</td>
+                    </tr>
+
+                    <tr>
+                        <td>&ltdiv></td>
+                        <td>Generic container for flow content</td>
+                    </tr>
+
+                    <tr>
+                        <td>&ltsection></td>
+                        <td>Container intended to divide chapters or topics</td>
+                    </tr>
+
+                    <tr>
+                        <td>&ltarticle></td>
+                        <td>Container intended to be reusable, ex: user-submitted comment</td>
+                    </tr>
+
+                    <tr>
+                        <td>&ltaside></td>
+                        <td>Sidebar</td>
+                    </tr>
+
+                    <tr>
+                        <td>&ltheader></td>
+                        <td>Defines a header for a document or a section</td>
+                    </tr>
+
+                    <tr>
+                        <td>&ltfooter></td>
+                        <td>Defines a footer for a document or a section</td>
+                    </tr>
+
+                    <tr>
+                        <td>&ltnav></td>
+                        <td>Holds navigation links</td>
+                    </tr>
+
+                    <tr>
+                        <td>&ltspan></td>
+                        <td>Inline container for styling purposes </td>
+                    </tr>
+
+                    <tr>
+                        <td>&lttitle></td>
+                        <td>Defines a title for the document</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lth1>&lth2>&lth3>&lth4>&lth5></td>
+                        <td>Headings</td>
+                    </tr>
+
+                    <tr>
+                        <td>&ltp></td>
+                        <td>Defines a paragraph</td>
+                    </tr>
+                    <tr>
+                        <td>&ltem></td>
+                        <td>Words that have a stressed emphasis compared to surrounding text</td>
+                    </tr>
+                    <tr>
+                        <td>&ltcite></td>
+                        <td>Mark the title of a work (book, play, song, etc.)</td>
+                    </tr>
+                    <tr>
+                        <td>&lti></td>
+                        <td>Element to mark text</td>
+                    </tr>
+                    <tr>
+                        <td>&ltstrong></td>
+                        <td>Element to mark text that has greater importance than surrounding text.</td>
+                    </tr>
+                    <tr>
+                        <td>&ltbr></td>
+                        <td>Inserts a single line break</td>
+                    </tr>
+
+                    <tr>
+                        <td>&ltpre></td>
+                        <td>Text preserves spaces and line breaks</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lthr></td>
+                        <td>Thematic Break, sets a line between lines</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt!--...--></td>
+                        <td>Comment</td>
+                    </tr>
+
+                    <tr>
+                        <td>&ltcode></td>
+                        <td>Contents styled to indicate that the text is computer code</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lta href=""></td>
+                        <td>Link</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>&ltbutton></td>
+                        <td>Performs a programmable action</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lttextarea></td>
+                        <td>multi-line plain-text editing BOX</td>
+                    </tr>
+                    <tr>
+                        <td>&ltlabel></td>
+                        <td>caption associated with item in a user interface</td>
+                    </tr>
+                    <tr>
+                        <td>&ltselect></td>
+                        <td>HTML element represents a control that provides a menu of options.</td>
+                    </tr>
+                    <tr>
+                        <td>&ltoption></td>
+                        <td>used to define an item contained in a &ltselect>, an &ltoptgroup>, or a
+                            &ltdatalist></datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&ltdl></td>
+                        <td>HTML element represents a description list.
+                            The element encloses a list of groups of terms (specified using the &ltdt> element)
+                            and descriptions (provided by &ltdd> elements)</td>
+                    </tr>
+                </table>
+
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="3">&ltinput> Types</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>&ltinput type="button"> </td>
+                        <td>programmed to control custom functionality</td>
+                        <td><button>Button</button></td>
+                    </tr>
+                    <tr>
+                        <td>&ltinput type="checkbox"> </td>
+                        <td>boxes that are checked (ticked) when activated</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>&ltinput type="radio"> </td>
+                        <td>selection checkboxrendered as small circles, which are filled or highlighted when selected
+                        </td>
+                        <td><input type="radio"></td>
+                    </tr>
+                    <tr>
+                        <td>&ltinput type="color"> </td>
+                        <td>provide a user interface element that lets a user specify a color</td>
+                        <td><input type="color"></td>
+                    </tr>
+                    <tr>
+                        <td>&ltinput type="date"> </td>
+                        <td>create input fields th at let the user enter a date</td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td>&ltinput type="datetime-local"></td>
+                        <td>create input controls that let the user easily enter both a date and a time</td>
+                        <td><input type="datetime-local"></td>
+                    </tr>
+                    <tr>
+                        <td>&ltinput type="month"> </td>
+                        <td>create input fields that let the user enter a month and year allowing a month and year</td>
+                        <td><input type="month"></td>
+                    </tr>
+                    <tr>
+                        <td>&ltinput type="week"> </td>
+                        <td>input fields allowing entry of a year plus the ISO 8601 week number</td>
+                        <td><input type="week"></td>
+                    </tr>
+                    <tr>
+                        <td>&ltinput type="time"> </td>
+                        <td>input fields designed to enter a time</td>
+                        <td><input type="time"></td>
+                    </tr>
+                    <tr>
+                        <td>&ltinput type="datetime-local"></td>
+                        <td>A control for entering a date and time (hour, minute, second, and fraction of a second)
+                            based on
+                            UTC time zone.</td>
+                        <td><input type="datetime-local"></td>
+                    </tr>
+                    <tr>
+                        <td>&ltinput type="email"> </td>
+                        <td>used to let the user enter and edit an e-mail address</td>
+                        <td><input type="email"></td>
+                    </tr>
+                    <tr>
+                        <td>&ltinput type="file"> </td>
+                        <td>let the user choose one or more files from their device storage</td>
+                        <td><input type="file"></td>
+                    </tr>
+                    <tr>
+                        <td>&ltinput type="hidden"> </td>
+                        <td>let web developers include data that cannot be seen or modified by users when a form is
+                            submitted</td>
+                        <td><input type="hidden"></td>
+                    </tr>
+                    <tr>
+                        <td>&ltinput type="image"> </td>
+                        <td>used to create graphical submit buttons</td>
+                        <td><input type="image" id="button1" src="public/button1.png"></td>
+
+                    </tr>
+                    <tr>
+                        <td>&ltinput type="number"> </td>
+                        <td>let the user enter a number</td>
+                        <td><input type="number" min="-10" max="10"></td>
+                    </tr>
+                    <tr>
+                        <td>&ltinput type="password"> </td>
+                        <td>provide a way for the user to securely enter a password</td>
+                        <td><input type="password"></td>
+
+                    </tr>
+                    <tr>
+                        <td>&ltinput type="range"> </td>
+                        <td>slider or dial control </td>
+                        <td><input type="range"></td>
+                    </tr>
+                    <tr>
+                        <td>&ltinput type="reset"> </td>
+                        <td>button with a default click event handler that resets all of the inputs in the form</td>
+                        <td><input type="reset"></td>
+
+                    </tr>
+                    <tr>
+                        <td>&ltinput type="search"> </td>
+                        <td>text fields designed for the user to enter search queries></td>
+                        <td><input type="search"></td>
+                    </tr>
+                    <tr>
+                        <td>&ltinput type="submit"> </td>
+                        <td>button that submits the form</td>
+                        <td><input type="submit"></td>
+
+                    </tr>
+                    <tr>
+                        <td>&ltinput type="tel"> </td>
+                        <td>control for entering a telephone number</td>
+                        <td><input type="tel"></td>
+                    </tr>
+                    <tr>
+                        <td>&ltinput type="text"> </td>
+                        <td>single-line text field</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>&ltinput type="url"> </td>
+                        <td>automatically validated to ensure that it's either empty or a properly-formatted URL before
+                            the
+                            form can be submitted.</td>
+                        <td><input type="text"></td>
+                    </tr>
+
+
+                </table>
+
+            </div>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">MDN</a>
+        </div>
+
+
+        <!-------------------------------------------------------------------------->
+
+
+        <div class="p">
+            <h2>Page Layout:</h2>
+
+            <article>
+                <p> <img class="float" src="public/layout2.gif" alt="layout2">
+
+                    This is the part of graphic design that deals with the arrangement of visual elements on a page.
+                    It is used to make the web pages look better while establishes the overall appearance, relative
+                    importance,
+                    and relationships between the graphic elements to achieve a smooth flow of information and eye
+                    movement for maximum effectiveness or impact.
+                </p>
+            </article>
+
+            <h2> Meta tag:</h2>
+            <p>
+                &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"><br><br>
+                This tag is required for the responsive design for all devices, adapts the viewport to the device.
+            </p>
+
+            <h2>HTML Skeletons</h2>
+            <div class="skeletons_container">
+                <div class="skeletons">
+                    <h3>Template with standard elements:</h3>
+
+                    <div class="pre_contain">
+
+                        <!-- <pre> -->
+                        &lt!DOCTYPE html><br>
+                        &lthtml lang="en"><br>
+
+                        &lthead><br>
+                        &nbsp&nbsp&nbsp&nbsp&ltmeta charset="UTF-8"><br>
+                        &nbsp&nbsp&nbsp&nbsp&lttitle>Page Title&lt/title><br>
+                        &nbsp&nbsp&nbsp&nbsp&ltmeta name="viewport" content="width=device-width,initial-scale=1"><br>
+                        &nbsp&nbsp&nbsp&nbsp&ltlink rel="stylesheet" href=""><br>
+                        &nbsp&nbsp&nbsp&nbsp&ltscript src="">&lt/script><br>
+                        &lt/head><br><br>
+                        &ltbody><br>
+                        &nbsp&nbsp&nbsp&nbsp&ltheader><br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltimg src="picture.jpg" alt="picture"><br>
+                        &nbsp&nbsp&nbsp&nbsp&lt/header><br>
+                        &nbsp&nbsp&nbsp&nbsp&ltsection><br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltdiv class=""><br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lth1>This is a Heading&lt/h1><br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltp>This is a paragraph.&lt/p><br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltp>This is another
+                        paragraph.&lt/p><br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/div><br>
+                        &nbsp&nbsp&nbsp&nbsp&lt/section><br>
+                        &lt/body><br>
+                        &lt/html><br><br>
+
+
+                        <!-- </pre>    -->
+                    </div>
+                </div>
+
+                <div class="skeletons">
+                    <h3>Template with defined classes:</h3>
+
+                    <div class="pre_contain">
+
+                        <!-- <pre> -->
+
+                        &ltbody>
+
+
+                        &lt!-- Header -->
+                        &ltheader class="header">
+                        &ltdiv class="container">
+                        &ltdiv class="header__inner">
+                        &ltdiv class="header__logo">
+                        &ltimg src="img/activebox-logo.png" alt="">
+                        &lt/div>
+
+                        &ltnav class="nav">
+                        &lta class="nav__link" href="#">Our Team&lt/a>
+                        &lta class="nav__link" href="#">Works&lt/a>
+                        &lta class="nav__link" href="#">Download&lt/a>
+                        &lta class="nav__link" href="#">Features&lt/a>
+                        &lta class="nav__link" href="#">Testimonials&lt/a>
+                        &lt/nav>
+                        &lt/div>
+                        &lt/div>
+                        &lt/header>
+
+
+                        &lt!-- Intro -->
+                        &ltdiv class="intro">
+                        &ltdiv class="container">
+                        &ltdiv class="intro__inner">
+                        &lth1 class="intro__title">Your Favorite One Page&lt/h1>
+                        &lth2 class="intro__subtitle">Lorem ipsum dolor sit amet&lt/h2>
+                        &lta class="btn btn--red" href="#">Find Out More&lt/a>
+                        &lt/div>
+                        &lt/div>
+                        &lt/div>
+
+
+                        &lt/body>
+                        <!-- </pre> -->
+                    </div>
+                </div>
+
+                <div class="skeletons">
+                    <H3>Table Boilerplate:</H3>
+                    <div class="pre_contain">
+                        <!-- <pre> -->
+
+
+                        &lttable><br>
+                        &nbsp&nbsp&ltthead><br>
+                        &nbsp&nbsp&nbsp&nbsp&ltth>&lt/th><br>
+                        &nbsp&nbsp&lt/thead><br>
+                        &nbsp&nbsp&lttr><br>
+                        &nbsp&nbsp&nbsp&nbsp&lttd>&lt/td><br>
+                        &nbsp&nbsp&nbsp&nbsp&lttd>&lt/td><br>
+                        &nbsp&nbsp&lt/tr><br>
+                        &lt/table><br>
+                        <!-- </pre> -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-------------------------------------------------------------------------->
+
+
+        <div class="p">
+            <h3>OPEN LINK IN A NEW WINDOW:</h3>
+
+            <h4>Open the linked document in a new window or tab:</h4>
+
+            <code>&lta href="xyz.html" target="_blank">  &lt/a></code>
+
+            <h4>Open the linked document in the same frame as it was clicked (this is default):</h4>
+
+            <code>&lta href="xyz.html" target="_self">  &lt/a></code>
+
+            <h4>Open the linked document in the parent frame:</h4>
+
+            <code>&lta href="xyz.html" target="_parent">  &lt/a></code>
+
+            <h4>Open the linked document in the full body of the window:</h4>
+
+            <code>&tla href="xyz.html" target="_top">  &lt/a></code>
+
+            <h4>Open the linked document in a named frame:</h4>
+
+            <code>&lta href="xyz.html" target="framename"> &lt/a></code>
+
+            <br>
+
+            <hr>
+
+            <h3>CREATE BLANK SPACES:</h3>
+
+            <h3>&amp;nbsp;</h3>
+            The entity &amp;nbsp; produces a non-breaking space, which is used when you don't want an automatic
+            line
+            break at that position.<br><br>
+
+
+            &amp;amp;nbsp; = &amp;nbsp;<br>
+
+            &amp;amp; = &
+
+            <h3> &ltpre></h3>
+            The text within the pre html tag will retain all its line breaks and multiple space with indents if
+            any.<br>
+
+            <h3>Style padding</h3>
+            <code>&ltspan style="padding-left:20px"></code>
+
+
+
+            <a href="https://crunchify.com/basic-html-how-do-you-create-blank-space-in-html/" target="_blank">Source</a>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!------------------------------------VSCODE----------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+    <div class="topic">
+        <H1 id="vscode">VSCODE</H1>
+        <div class="p">
+            <div class="vscode_shortcuts">
+                <table>
+                    <thead>
+                        <th colspan="2">KEY Shortcuts</th>
+                    </thead>
+                    <tr>
+                        <td>Select all the occurrences of current selection</td>
+                        <td>Ctrl + Shift + L</td>
+                    </tr>
+                    <tr>
+                        <td>Select all the occurrences of current word</td>
+                        <td>Ctrl + F2</td>
+                    </tr>
+                    <tr>
+                        <td>Comment all selected text</td>
+                        <td>Shift+Alt+A / Ctrl+K+C</td>
+                    </tr>
+                    <tr>
+                        <td>Comment Line</td>
+                        <td>// + text</td>
+                    </tr>
+                    <tr>
+                        <td>Uncomment</td>
+                        <td>Ctrl+K+U</td>
+                    </tr>
+                    <tr>
+                        <td>Fast tag html</td>
+                        <td>Alt + W</td>
+                    </tr>
+                    <tr>
+                        <td>Boilerplate HTML</td>
+                        <td>! + tab + enter</td>
+                    </tr>
+                    <tr>
+                        <td>Command palet</td>
+                        <td>Crtl+Shift+P</td>
+                    </tr>
+                    <tr>
+                        <td>Format Document</td>
+                        <td>Shift+Alt+F</td>
+                    </tr>
+                    <tr>
+                        <td>Format Selection</td>
+                        <td>Ctrl+K Ctrl+F</td>
+                    </tr>
+                    <tr>
+                        <td>Duplicate line</td>
+                        <td>Shift + Alt + Up<br>
+                            Shift + Alt + Down </td>
+                    </tr>
+                    <tr>
+                        <td>Indentation</td>
+                        <td>Tab to the right<br>
+                            Shift + Tab to the left</td>
+                    </tr>
+                    <tr>
+                        <td>Move selection</td>
+                        <td>Ctrl + drag up/down</td>
+                    </tr>
+                    <tr>
+                        <td>Multiple Cursor</td>
+                        <td>Alt + Click , Ctrl+Alt+Up/Down</td>
+                    </tr>
+
+                    <tr>
+                        <td>Column Select</td>
+                        <td>Ctrl + Shift + Alt + Up, Down, Right, Left, PgUp, PgDown</td>
+                    </tr>
+                    <tr>
+                        <td>Undo</td>
+                        <td>Ctrl + Z</td>
+                    </tr>
+                    <tr>
+                        <td>Redo</td>
+                        <td>Ctrl + Y</td>
+                    </tr>
+                    <tr>
+                        <td>Toggle Word Wrap</td>
+                        <td>Alt + Z</td>
+                    </tr>
+                </table>
+            </div>
+
+            <a href="https://code.visualstudio.com/docs/editor/codebasics" target="_blank">Key Shortcuts</a>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--CSS---------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+    <div class="topic">
+
+        <h1 id="css">CSS</h1>
+
+
+        <div class="p">
+            <h2> The Cascading Style Sheet</h2>
+            <p>&ltlink rel="stylesheet" href="styles.css"></p>
+
+
+            <div class="div__css-grid">
+
+
+                <div class="div__css-inner-block">
+                    <h2>SELECTORS</h2>
+
+
+                    <table>
+                        <tr>
+                            <th colspan="2">
+                                UNIVERSAL SELECTOR
+
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>*</td>
+                            <td>Selects all the document and its elements</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">
+                                ELEMENT SELECTOR
+
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>element tag </td>
+                            <td>selects the refered element</td>
+                        </tr>
+                        <tr>
+                            <td>element , element </td>
+                            <td>selects multiple elements</td>
+                        </tr>
+
+                        <tr>
+                            <th colspan="2">
+                                ID SELECTOR
+
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>#idname </td>
+                            <td>selects the refered id element</td>
+                        </tr>
+
+                        <tr>
+                            <th colspan="2">
+                                CLASS SELECTOR
+
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>.classname </td>
+                            <td>selects the refered class, can contain multiple elements</td>
+                        </tr>
+
+                        <tr>
+                            <th colspan="2">
+                                DESCENDANT SELECTOR
+
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>elementY elementX </td>
+                            <td>select all x nested in a y at any deep</td>
+                        </tr>
+
+                        <tr>
+                            <th colspan="2">DIRECT DESCENDANT SELECTOR</th>
+                        </tr>
+                        <tr>
+                            <td>elementY > elementX</td>
+                            <td>select all X direct descendent of Y</td>
+                        </tr>
+
+                        <tr>
+                            <th colspan="2">
+                                ADJACENT SELECTOR
+
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>elementY + elementX</td>
+                            <td>select the elementX that is immediately preceded by elementY</td>
+                        </tr>
+
+                        <tr>
+                            <th colspan="2">
+                                ATTRIBUTE SELECTOR
+
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>element[attr] </td>
+                            <td>Represents elements with an attribute name of attr.</td>
+                        </tr>
+                        <tr>
+                            <td>element[attr=value] </td>
+                            <td>Represents elements with an attribute name of attr whose value is exactly value.</td>
+                        </tr>
+                        <tr>
+                            <td>[attr~=value] </td>
+                            <td>Represents elements with an attribute name of attr whose value is a whitespace-separated
+                                list of
+                                words, one of which is exactly value.</td>
+                        </tr>
+                        <tr>
+                            <td>[attr|=value] </td>
+                            <td>Represents elements with an attribute name of attr whose value can be exactly value or
+                                can begin
+                                with value immediately followed by a hyphen, - (U+002D). It is often used for language
+                                subcode
+                                matches.</td>
+                        </tr>
+                        <tr>
+                            <td>[attr^=value] </td>
+                            <td>Represents elements with an attribute name of attr whose value is prefixed (preceded) by
+                                value.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>[attr$=value] </td>
+                            <td>Represents elements with an attribute name of attr whose value is suffixed (followed) by
+                                value.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>[attr*=value] </td>
+                            <td>Represents elements with an attribute name of attr whose value contains at least one
+                                occurrence
+                                of value within the string.</td>
+                        </tr>
+                        <tr>
+                            <td>[attr operator value i]</td>
+                            <td>Adding an i (or I) before the closing bracket causes the value to be compared
+                                case-insensitively
+                                (for characters within the ASCII range).</td>
+                        </tr>
+                        <tr>
+                            <td>[attr operator value S]</td>
+                            <td>Adding an s (or S) before the closing bracket causes the value to be compared
+                                case-sensitively
+                                (for characters within the ASCII range).</td>
+                        </tr>
+
+
+                    </table>
+                </div>
+
+                <div class="div__css-inner-block">
+                    <table>
+                        <th colspan="2">PSEUDO CLASSES:</th>
+
+                        <tr>
+                            <td>:nth-of-type() </td>
+                            <td>Matches elements based on their position among sibilings of the same type.</td>
+                        </tr>
+                        <tr>
+                            <td>:nth-child() </td>
+                            <td>Takes a single argument that describes a pattern for matching element indices in a list
+                                of
+                                siblings.</td>
+                        </tr>
+                        <tr>
+                            <td>tr:nth-child(odd) or tr:nth-child(2n+1)</td>
+                            <td>Represents the odd rows of an HTML table: 1, 3, 5, etc.</td>
+                        </tr>
+                        <tr>
+                            <td>tr:nth-child(even) or tr:nth-child(2n) </td>
+                            <td>Represents the even rows of an HTML table: 2, 4, 6, etc.</td>
+                        </tr>
+                        <tr>
+                            <td>:nth-child(7) </td>
+                            <td>Represents the seventh element.</td>
+                        </tr>
+                        <tr>
+                            <td>:nth-child(5n) </td>
+                            <td> Represents elements 5 [=5×1], 10 [=5×2], 15 [=5×3], etc.</td>
+                        </tr>
+                        <tr>
+                            <td>:nth-child(n+7) </td>
+                            <td>Represents the seventh and all following elements: 7 [=0+7], 8 [=1+7], 9 [=2+7], etc.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>:nth-child(3n+4) </td>
+                            <td>Represents elements 4 [=(3×0)+4], 7 [=(3×1)+4], 10 [=(3×2)+4], 13 [=(3×3)+4], etc.</td>
+                        </tr>
+                        <tr>
+                            <td>:nth-child(-n+3) </td>
+                            <td>Represents the first three elements. [=-0+3, -1+3, -2+3]</td>
+                        </tr>
+                        <tr>
+                            <td>p:nth-child(n) </td>
+                            <td>Represents every &ltp> element in a group of siblings. This selects the same elements as
+                                a
+                                simple p selector (although with a higher specificity).</td>
+                        </tr>
+                        <tr>
+                            <td>p:nth-child(1) or p:nth-child(0n+1) </td>
+                            <td>Represents every &ltp> that is the first element in a group of sib</td>
+                        </tr>
+                        <tr>
+                            <td>p:nth-child(n+8):nth-child(-n+15) </td>
+                            <td>Represents the eighth through the fifteenth &ltp> elements of a group of siblings.</td>
+                        </tr>
+                        <tr>
+                            <td>:hover </td>
+                            <td>triggered when the user hovers over an element with the cursor</td>
+                        </tr>
+                        <tr>
+                            <td>:active </td>
+                            <td>represents an element (such as a button) that is being activated by the user</td>
+                        </tr>
+                        <tr>
+                            <td>:target </td>
+                            <td>represents an element in the current document, that has id attribute set to a name that
+                                is
+                                matching the fragment identifier of the current URI. An URI fragment is what follows the
+                                “number
+                                sign” (#).</td>
+                        </tr>
+                        <tr>
+                            <td>:autofill </td>
+                            <td>matches when an &ltinput> element has its value autofilled by the browser</td>
+                        </tr>
+                        <tr>
+                            <td>:enabled </td>
+                            <td>represents any enabled element. An element is enabled if it can be activated (selected,
+                                clicked
+                                on, typed into, etc.)</td>
+                        </tr>
+                        <tr>
+                            <td>:focus </td>
+                            <td>element (such as a form input) that has received focus. It is generally triggered when
+                                the user
+                                clicks or taps on an element or selects it with the keyboard's Tab key.</td>
+                        </tr>
+                        <tr>
+                            <td>:has() </td>
+                            <td>element of the selectors passed as parameters (ex: &lta> elements that directly contain
+                                an
+                                &ltimg> child - a:has(> img))</td>
+                        </tr>
+                        <tr>
+                            <td>:optional </td>
+                            <td>any &ltinput>, &ltselect>, or &lttextarea> element that does not have the required
+                                attribute set
+                                on it.</td>
+                        </tr>
+                        <tr>
+                            <td>:is/:where()</td>
+                            <td>takes a selector list as its argument, and selects any element that can be selected by
+                                one of
+                                the selectors in that list (ex: :where(header, main, footer) p:hover)</td>
+                        </tr>
+                        <tr>
+                            <td>:link </td>
+                            <td>matches every unvisited &lta> or &ltarea> element that has an href attribute</td>
+                        </tr>
+                        <tr>
+                            <td>:root </td>
+                            <td>represents the &lthtml>, useful for declaring global CSS variables. Ex: --main-color: hotpink;</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="div__css-inner-block">
+                    <table>
+
+                        <tr>
+                            <th colspan="2">Pseudo Elements</th>
+                        </tr>
+                        <tr>
+                            <td>::first-line </td>
+                            <td>applies styles to the first line of a block-level element</td>
+                        </tr>
+                        <tr>
+                            <td>::after </td>
+                            <td>creates a pseudo-element that is the last child of the selected element</td>
+                        </tr>
+                        <tr>
+                            <td>::before </td>
+                            <td>creates a pseudo-element that is the first child of the selected element</td>
+                        </tr>
+                        <tr>
+                            <td>::file-selector-button</td>
+                            <td>represents the button of an &ltinput> of type="file"</td>
+                        </tr>
+                    </table>
+                    <h2>MEDIA QUERIES</h2>
+
+                    <table>
+                        <tr>
+                            <td>@media screen and (min-width: 900px) and (orientation: landscape)</td>
+                        </tr>
+                        <tr>
+                            <td>(min-width: 30em) and (max-width: 50em)</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+
+
+                <div class="div__css-inner-block">
+                    <table>
+                        <th colspan="2">UNITS</th>
+
+
+                        <tr>
+                            <td>px </td>
+                            <td> pixels </td>
+                        </tr>
+                        <tr>
+                            <td>%</td>
+                        </tr>
+                        <tr>
+                            <td>em </td>
+                            <td> with font-size 1em equals font-size of the parent, with other properties, 1em is equal
+                                to the computed font-size of the element itself</td>
+                        </tr>
+                        <tr>
+                            <td>rem </td>
+                            <td> root html font-size </td>
+                        </tr>
+                        <tr>
+                            <td>ch </td>
+                            <td> equates to the width of the number 0 (zero) of the grid container's current font</td>
+                        </tr>
+                        <tr>
+                            <td>auto</td>
+                            <td>use when you want to make your grid track match the size of content inside of it. This
+                                works for text, images, SVG, canvas elements, etc.</td>
+                        </tr>
+                        <tr>
+                            <td>none</td>
+                            <td> is the default for rows and columns if you don't specify them. Use none mainly when you
+                                want to reset/override a grid that was defined earlier, for example in a media query
+                                breakpoint.</td>
+                        </tr>
+                        <tr>
+                            <td>vh</td>
+                            <td>viewport height , 100vh = 100% size of the viewport</td>
+                        </tr>
+                        <tr>
+                            <td>vw</td>
+                            <td>viewport width same that vh but for the width</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+
+
+                <div class="div__css-inner-block">
+                    <h2>POSITION:</h2>
+
+                    <table id="imputtypes">
+                        <tr>
+                            <th colspan="2">PROPERTIES</th>
+                        </tr>
+                        <tr>
+                            <td>Static </td>
+                            <td>The element is positioned according to the normal flow of the document. The top, right,
+                                bottom,
+                                left, and z-index properties have no effect. This is the default value.</td>
+                        </tr>
+                        <tr>
+                            <td>Relative</td>
+                            <td>The element is positioned according to the normal flow of the document, and then offset
+                                relative
+                                to itself based on the values of top, right, bottom, and left. The offset does not
+                                affect the
+                                position of any other element</td>
+                        </tr>
+                        <tr>
+                            <td>Absolute</td>
+                            <td>The element is removed from the normal document flow, and It is positioned relative to
+                                its
+                                closest positioned ancestor.</td>
+                        </tr>
+                        <tr>
+                            <td>Fixed </td>
+                            <td>The element is removed from the normal document flow. It is positioned relative to the
+                                initial
+                                containing block established by the viewport.</td>
+                        </tr>
+                        <tr>
+                            <td>Sticky </td>
+                            <td>The element is positioned according to the normal flow of the document, and then offset
+                                relative
+                                to its nearest scrolling ancestor and containing block (nearest block-level ancestor),
+                                including
+                                table-related elements, based on the values of top, right, bottom, and left. The offset
+                                does not
+                                affect the position of any other elements.</td>
+                        </tr>
+                        <tr>
+                            <td>Float:</td>
+                            <td> Places an element on the left or right side of its container, allowing text and inline
+                                elements
+                                to wrap around it.</td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div class="div__css-inner-block">
+                    <h2>DISPLAY:</h2>
+                    <table>
+                        <tr>
+                            <th colspan="2">Display:</th>
+                        </tr>
+                        <tr>
+                            <td>INLINE </td>
+                            <td>Width & Height are ignored. Margin & padding push elements away horizontally but not
+                                verticaly.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>BLOCK </td>
+                            <td>Block elements breat the flow of a document. Width Height, Margin, & Padding are
+                                respected.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>INLINE-BLOCK</td>
+                            <td>Behave like a inline element exept Width, Height, Margin, & Padding are respected. </td>
+                        </tr>
+
+                        <tr>
+                            <td>flex;</td>
+                            <td>The element behaves like a block element and lays out its content according to the
+                                flexbox
+                                model.</td>
+                        </tr>
+                        <tr>
+                            <td>grid;</td>
+                            <td>The element behaves like a block element and lays out its content according to the grid
+                                model.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>inline-grid;</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>flow-root;</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>inline-flex;</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>none;</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>contents;</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>inline flow;</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>inline flow-root;</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>block flex;</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>inline flex;</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>block grid;</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>inline grid;</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>block flow-root;</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>block flow;</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>table;</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>table-row;</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>list-item;</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>inherit;</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>initial;</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>revert;</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>revert-layer;</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>unset;</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>table;</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+
+
+
+                <div class="div__css-inner-block">
+                    <h2>BOX MODEL</h2>
+
+                    <table>
+                        <tr>
+                            <th colspan="2">Box-sizing: </th>
+                        </tr>
+                        <tr>
+                            <td>border-box</td>
+                            <td>(default) . If you set an element's width to 100 pixels, then the element's content box
+                                will be
+                                100 pixels wide, and the width of any border or padding will be added to the final
+                                rendered
+                                width, making the element wider than 100px.</td>
+                        </tr>
+                        <tr>
+                            <td>content-box</td>
+                            <td> If you set an element's width to 100 pixels, that 100 pixels will include any border or
+                                padding
+                                you added, and the content box will shrink to absorb that extra width. </td>
+                        </tr>
+                        <tr>
+                            <td>padding-box:</td>
+                            <td>The padding sits around the content as white space; size it using padding and related
+                                properties.</td>
+                        </tr>
+                        <tr>
+                            <td>margin-box: </td>
+                            <td>The margin is the outermost layer, wrapping the content, padding, and border as
+                                whitespace
+                                between this box and other elements; size it using margin and related properties.</td>
+                        </tr>
+
+                    </table>
+                </div>
+
+                <div class="div__css-inner-block">
+                    <h2>FLEX BOX</h2>
+                    <table>
+                        <tr>
+                            <th colspan="2">Properties</th>
+                        </tr>
+                        <tr>
+                            <td>flex-direction: </td>
+                            <td>row/column;</td>
+                        </tr>
+                        <tr>
+                            <td>justify-content:</td>
+                            <td>flex-start/flex-end/center/space-between/space-around/space-evenly;(main axis)</td>
+                        </tr>
+                        <tr>
+                            <td>align-items: </td>
+                            <td>flex-start/flex-end/center/baseline(aligns to text baseline); (cross axis) </td>
+                        </tr>
+                        <tr>
+                            <td>flex-wrap: </td>
+                            <td>wrap/wrap-reverse/nowrap;</td>
+                        </tr>
+                        <tr>
+                            <td>align-content:</td>
+                            <td>flex-start/end/center/space-between/space-around/space-evenly; (handles the space
+                                between the
+                                columns when wrap is on)</td>
+                        </tr>
+                        <tr>
+                            <td>align-self:</td>
+                            <td>flex-start/flex-end/center; (aligns the selected element in the cross axis) </td>
+                        </tr>
+                        <tr>
+                            <td>flex-basis:</td>
+                            <td> 400px;(size of the main axis direction)</td>
+                        </tr>
+                        <tr>
+                            <td>flex-grow:</td>
+                            <td> 1/2/3/...(element grow proportionaly respect the others taking available space)</td>
+                        </tr>
+                        <tr>
+                            <td>flex-shrink:</td>
+                            <td> 1/2/3... (element shrinks when there is not enought space on the container)</td>
+                        </tr>
+                        <tr>
+                            <th>flex:</th>
+                        </tr>
+                        <tr>
+                            <td>flex: 2; </td>
+                            <td> One value, unitless number: flex-grow</td>
+                        </tr>
+                        <tr>
+                            <td>flex: 10em; </td>
+                            <td> One value, width/height: flex-basis</td>
+                        </tr>
+                        <tr>
+                            <td>flex: 1 30px; </td>
+                            <td> Two values: flex-grow | flex-basis</td>
+                        </tr>
+                        <tr>
+                            <td>flex: 2 2; </td>
+                            <td> Two values: flex-grow | flex-shrink</td>
+                        </tr>
+                        <tr>
+                            <td>flex: 2 2 10%;</td>
+                            <td> Three values: flex-grow | flex-shrink | flex-basis</td>
+                        </tr>
+
+
+                    </table>
+                </div>
+
+
+
+
+
+
+                <div class="div__css-inner-block">
+                    <h2>TRANSFORM</h2>
+
+                    <table>
+                        <tr>
+                            <th>Transform:</th>
+                            <td></td>
+                            <td> lets you rotate, scale, skew, or translate an element. It modifies the coordinate space
+                                of the
+                                CSS</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>matrix() </td>
+                            <td>Describes a homogeneous 2D transformation matrix.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>matrix3d() </td>
+                            <td>Describes a 3D transformation as a 4x4 homogeneous matrix.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>perspective()</td>
+                            <td>Sets the distance between the user and the z=0 plane.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>rotate() </td>
+                            <td>Rotates an element around a fixed point on the 2D plane.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>rotate3d() </td>
+                            <td>Rotates an element around a fixed axis in 3D space.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>rotateX() </td>
+                            <td>Rotates an element around the horizontal axis.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>rotateY() </td>
+                            <td>Rotates an element around the vertical axis.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>rotateZ() </td>
+                            <td>Rotates an element around the z-axis.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>scale() </td>
+                            <td>Scales an element up or down on the 2D plane.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>scale3d() </td>
+                            <td>Scales an element up or down in 3D space.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>scaleX() </td>
+                            <td>Scales an element up or down horizontally.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>scaleY() </td>
+                            <td>Scales an element up or down vertically.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>scaleZ() </td>
+                            <td>Scales an element up or down along the z-axis.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>skew() </td>
+                            <td>Skews an element on the 2D plane.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>skewX() </td>
+                            <td>Skews an element in the horizontal direction.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>skewY() </td>
+                            <td>Skews an element in the vertical direction.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>translate() </td>
+                            <td>Translates an element on the 2D plane.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>translate3d()</td>
+                            <td>Translates an element in 3D space.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>translateX() </td>
+                            <td>Translates an element horizontally.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>translateY() </td>
+                            <td>Translates an element vertically.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>translateZ() </td>
+                            <td>Translates an element along the z-axis.</td>
+                        </tr>
+                        <tr>
+                            <th>Transform-origin:</th>
+                            <td></td>
+                            <td>sets the origin for an element's transformations.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>One-value syntax: </td>
+                            <td>represents the horizontal offset, &ltlength>, a &ltpercentage>, or one of the keywords
+                                left,
+                                center, right, top, and bottom</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Two-value syntax </td>
+                            <td>first value represents the horizontal offset and the second represents the vertical
+                                offset.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Three-value syntax:</td>
+                            <td>The third value must be a &ltlength>. It always represents the Z offset.</td>
+                        </tr>
+                        <tr>
+                            <th>Transform-box:</th>
+                            <td></td>
+                            <td>defines the layout box to which the transform and transform-origin properties relate.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>content-box</td>
+                            <td>The content box is used as the reference box. The reference box of a &lttable> is the
+                                border box
+                                of its table wrapper box, not its table box.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>border-box </td>
+                            <td>The border box is used as the reference box. The reference box of a &lttable> is the
+                                border box
+                                of its table wrapper box, not its table box.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>fill-box </td>
+                            <td>The object bounding box is used as the reference box.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>stroke-box </td>
+                            <td>The stroke bounding box is used as the reference box.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>view-box </td>
+                            <td>The nearest SVG viewport is used as the reference box. If a viewBox attribute is
+                                specified for
+                                the SVG viewport creating element, the reference box is positioned at the origin of the
+                                coordinate system established by the viewBox attribute, and the dimension of the
+                                reference box
+                                is set to the width and height values of the viewBox attribute.</td>
+                        </tr>
+
+
+                        <tr>
+                            <th> transform-style: </th>
+                            <td></td>
+                            <td>sets whether children of an element are positioned in the 3D space or are flattened in
+                                the plane
+                                of the element.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>flat </td>
+                            <td>Indicates that the children of the element are lying in the plane of the element itself.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>preserve-3d</td>
+                            <td>Indicates that the children of the element should be positioned in the 3D-space.</td>
+                        </tr>
+
+                        <tr>
+                            <th>text-transform</th>
+                            <td></td>
+                            <td>specifies how to capitalize an element's text</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>uppercase </td>
+                            <td>converts all characters to uppercase.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>lowercase </td>
+                            <td>converts all characters to lowercase.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>none </td>
+                            <td>prevents the case of all characters from being changed.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>full-width Is </td>
+                            <td>forces the writing of a character — mainly ideograms and Latin scripts — inside a
+                                square,
+                                allowing them to be aligned in the usual East Asian scripts (like Chinese or Japanese).
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>full-size-kana</td>
+                            <td>used for &ltruby> annotation text, the keyword converts all small Kana characters to the
+                                equivalent full-size Kana, to compensate for legibility issues at the small font sizes
+                                typically
+                                used in ruby.</td>
+                        </tr>
+
+
+
+
+                    </table>
+                </div>
+
+                <div class="div__css-inner-block">
+                    <h2>TRANSITION</h2>
+                    <Table>
+
+                        <tr>
+                            <td>transition-delay </td>
+                            <td>specifies the duration to wait before starting a property's transition effect when its
+                                value
+                                changes.</td>
+                        </tr>
+                        <tr>
+                            <td>transition-duration </td>
+                            <td>sets the length of time a transition animation should take to complete</td>
+                        </tr>
+                        <tr>
+                            <td>transition-property </td>
+                            <td>sets the CSS properties to which a transition effect should be applied. </td>
+                        </tr>
+                        <tr>
+                            <td>transition-timing-function</td>
+                            <td>sets how intermediate values are calculated for CSS properties being affected by a
+                                transition
+                                effect.</td>
+                        </tr>
+
+                    </Table>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition" target="_blank">MDN
+                        Transition</a>
+                </div>
+
+                <div class="div__css-inner-block">
+                    <h2>BACKGROUND</h2>
+
+                    <table>
+
+
+
+                        <tr>
+                            <th>background: </th>
+                            <td></td>
+                            <td>sets all background style properties at once, such as color, image, origin and size, or
+                                repeat
+                                method</td>
+                        </tr>
+                        <tr>
+                            <th>background-color:</th>
+                            <td></td>
+                            <td>sets the background color of an element.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>brown;</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>#74992e;</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>rgb(255, 255, 128);</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>rgba(255, 255, 128, .5);</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>hsl(50, 33%, 25%);</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>hsla(50, 33%, 25%, .75);</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));</td>
+                        </tr>
+
+
+                        <tr>
+                            <th>background-image:</th>
+                            <td></td>
+                            <td>sets one or more background images on an element</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>blue</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>url("../../media/examples/lizard.png");</td>
+                            <td></td>
+                        </tr>
+                        <th>background-size</th>
+                        <td></td>
+                        <td>sets the size of the element's background image. The image can be left to its natural size,
+                            stretched, or constrained to fit the available space.</td>
+
+
+                        <tr>
+                            <td>background-size:</td>
+                            <td>contain;</td>
+                            <td> Scales the image as large as possible within its container without cropping or
+                                stretching the
+                                image. If the container is larger than the image, this will result in image tiling,
+                                unless the
+                                background-repeat property is set to no-repeat.</td>
+                        </tr>
+                        <tr>
+                            <td>background-size:</td>
+                            <td>cover;</td>
+                            <td> Scales the image (while preserving its ratio) to the smallest possible size to fill the
+                                container (that is: both its height and width completely cover the container), leaving
+                                no empty
+                                space. If the proportions of the background differ from the element, the image is
+                                cropped either
+                                vertically or horizontally.
+                        </tr>
+                        </td>
+                        <tr>
+                            <td>background-size:</td>
+                            <td>30%; </td>
+                            <td>Stretches the image in the corresponding dimension to the specified percentage of the
+                                background
+                                positioning area.</td>
+                        </tr>
+                        <tr>
+                            <td>background-size:</td>
+                            <td>200px 100px; </td>
+                            <td> Using both a width and a height value, in which case the first sets the width and the
+                                second
+                                sets the height</td>
+                        </tr>
+                        <tr>
+                            <td>background-size:</td>
+                            <td>6px, auto, contain;</td>
+                        </tr>
+
+                        <tr>
+                            <th> background-origin: </th>
+                            <td></td>
+                            <td>sets the background's origin: from the border start, inside the border, or inside the
+                                padding.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>background-origin:</td>
+                            <td>padding-box;</td>
+                        </tr>
+                        <tr>
+                            <td>background-origin:</td>
+                            <td>content-box;</td>
+                        </tr>
+                        <tr>
+                            <td>background-origin:</td>
+                            <td>border-box; </td>
+                            <td>The background is positioned relative to the border box</td>
+                        </tr>
+
+
+                        <tr>
+                            <th>background-attachment</th>
+                            <td></td>
+                            <td>sets whether a background image's position is fixed within the viewport, or scrolls with
+                                its
+                                containing block.</td>
+                        </tr>
+
+                        <tr>
+                            <td>background-attachment:</td>
+                            <td>scroll;</td>
+                            <td>The background is fixed relative to the element itself and does not scroll with its
+                                contents.
+                                (It is effectively attached to the element's border.)</td>
+                        </tr>
+                        <tr>
+                            <td>background-attachment:</td>
+                            <td>fixed; </td>
+                            <td>The background is fixed relative to the viewport. Even if an element has a scrolling
+                                mechanism,
+                                the background doesn't move with the element.</td>
+                        </tr>
+                        <tr>
+                            <td>background-attachment:</td>
+                            <td>local; </td>
+                            <td>The background is fixed relative to the element's contents. If the element has a
+                                scrolling
+                                mechanism, the background scrolls with the element's contents, and the background
+                                painting area
+                                and background positioning area are relative to the scrollable area of the element
+                                rather than
+                                to the border framing them.
+                        </tr>
+                        </td>
+
+
+                        <tr>
+                            <th>background-clip</th>
+                            <td></td>
+                            <td>sets whether an element's background extends underneath its border box, padding box, or
+                                content
+                                box.</td>
+                        </tr>
+
+                        <tr>
+                            <td>background-clip:</td>
+                            <td>border-box;</td>
+                        </tr>
+                        <tr>
+                            <td>background-clip:</td>
+                            <td>padding-box;</td>
+                        </tr>
+                        <tr>
+                            <td>background-clip:</td>
+                            <td>content-box;</td>
+                        </tr>
+
+                        <tr>
+                            <td>background-clip:</td>
+                            <td>text;</td>
+                        </tr>
+                        <tr>
+                            <td>-webkit-background-clip:</td>
+                            <td>text;</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>background-repeat:</td>
+                            <td>no-repeat;</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+
+
+
+                <div class="div__css-inner-block">
+                    <h2>Text Align:</h2>
+
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">TEXT ALIGN PROPERTIES</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td> text-align:</td>
+                            <td>"sets the horizontal alignment of the inline-level content inside a block element or
+                                table-cell box"</td>
+                        </tr>
+                        <tr>
+                            <td>text-align: start;</td>
+                            <td>"Same as “left” in ltr, same as “right” in rtl."</td>
+                        </tr>
+                        <tr>
+                            <td>text-align: end;</td>
+                            <td>"Same as “right” in ltr, same as “left” in rtl."</td>
+                        </tr>
+                        <tr>
+                            <td>text-align: left;</td>
+                            <td>"The default value. Content aligns along the left side."</td>
+                        </tr>
+                        <tr>
+                            <td>text-align: right;</td>
+                            <td>"right – Content aligns along the right side."</td>
+                        </tr>
+                        <tr>
+                            <td>text-align: center;</td>
+                            <td>"Content centers between the left and right edges."</td>
+                        </tr>
+                        <tr>
+                            <td>text-align: justify;</td>
+                            <td>"Content spaces out such that as many blocks fit onto one line as possible"</td>
+                        </tr>
+                        <tr>
+                            <td>text-align: justify-all;</td>
+                            <td>"inline contents of a block are horizontally aligned if the contents do not completely
+                                fill the line box."</td>
+                        </tr>
+                        <tr>
+                            <td>text-align: match-parent;</td>
+                            <td>"match parent text-align property"</td>
+                        </tr>
+                        <tr>
+                            <td>text-align: ".";</td>
+                            <td>"When multiple cells in a column have an alignment character specified, the alignment
+                                character of each such cell in the column is centered along a single column-parallel
+                                axis and the rest of the text in the column shifted accordingly. "</td>
+                        </tr>
+                        <tr>
+                            <td>text-align: "." center;</td>
+                            <td>"character align with a property"</td>
+                        </tr>
+                        <tr>
+                            <td>text-align: -moz-center;</td>
+                            <td>"Block alignment values"</td>
+                        </tr>
+                        <tr>
+                            <td>text-align: -webkit-center;</td>
+                            <td>"Block alignment values"</td>
+                        </tr>
+                        <tr>
+                            <td>text-align: inherit;</td>
+                            <td>"match parent text-align property"</td>
+                        </tr>
+                        <tr>
+                            <td>text-align: initial;</td>
+                            <td> "?"</td>
+                        </tr>
+                        <tr>
+                            <td>text-align: revert;</td>
+                            <td>"?"</td>
+                        </tr>
+                        <tr>
+                            <td>text-align: revert-layer;</td>
+                            <td> "?"</td>
+                        </tr>
+                        <tr>
+                            <td>text-align: unset;</td>
+                            <td>"?"</td>
+                        </tr>
+                    </table>
+
+                    <h2>Text Properties:</h2>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Text properties</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>font-weight: 400;</td>
+                            <td>"Specifies weight of glyphs in the font, their degree of blackness or stroke thickness."
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>text-decoration: #3a220e underline wavy;</td>
+                            <td>"Decorations applied to font used for an element's text."</td>
+                        </tr>
+                        <tr>
+                            <td>letter-spacing: 15px;</td>
+                            <td>"letter-spacing: 15px;"</td>
+                        </tr>
+                        <tr>
+                            <td>font-size: 80px;</td>
+                            <td>"Sets the size of the font"</td>
+                        </tr>
+                        <tr>
+                            <td>font-family: monospace;</td>
+                            <td> "sets font-family"</td>
+                        </tr>
+                        <tr>
+                            <td>line-height: 3;</td>
+                            <td>"Sets the height of a line box"</td>
+                        </tr>
+
+                        <tr>
+                            <th>text-transform:</th>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td>none;</td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td>capitalize;</td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td>uppercase;</td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td>lowercase;</td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td>full-width;</td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td>full-size-kana;</td>
+                        </tr>
+
+
+
+                    </table>
+                </div>
+
+
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN CSS</a>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-------JAVASCRIPT------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="topic">
+        <h1 id="javascript">JAVA SCRIPT</h1>
+
+
+        <div class="p">
+
+<div class="div__js-outer">
+    
+                <h2>Create variable:</h2>
+    
+                <div class="div__js-inner"><code><span class="clr-var">let</span> <span class="clr-var-name">agustin</span> = <span class="clr-meth">1985</span>;</code></div>
+</div>
+
+            <h2>Modify variable:</h2>
+
+            <div class="div__js-inner">
+                <code>
+                    agustin = agustin + 1;  -----> agustin += 1; ------> agustin++;<br><br>
+        
+                    <br>
+                    agustin = agustin - 1;  -----> agustin -= 1; ------>  agustin--; <br>
+        
+                    <br>
+                    
+                </code>
+            </div>
+
+            <h2>Variable that cant be modified:</h2>
+
+            <div class="div__js-inner"><code>const pi = 3.14;</code></div>
+
+
+            <h2>Old javascript variable</h2>
+
+            <div class="div__js-inner"><code>var edadhoy = 36;</code></div>
+
+            <h2>Variable BOOLEAN</h2>
+
+            <div class="div__js-inner">
+                <code>
+                    true<br>
+                    false<br><br>
+                    1 == "1" (equality regardless of variable type)<br>
+                    true<br><br>
+                    1 === "1" (strict equality)<br>
+                    false<br><br>
+                    1 != "1" (inequality without distinction)<br>
+                    false<br><br>
+                    1 !== "1" (strict inequality)<br>
+                    true<br>
+
+                </code>
+
+            </div>
+            <p>The strict inequality operator (!==) checks whether its two operands are not equal, returning a Boolean
+                result.</p>
+
+            <h2> String: text variable</h2>
+            <div class="div__js-inner">
+                <code>
+                    let nombre = "agustin"<br>
+                    let apellido = "bruno";<br>
+                    let ciudadNacimiento = "Buenos Aires";<br>
+                    let sentence = "the cat is under the table";
+                </code>
+            </div>
+            <hr>
+            <h2>STRING TEMPLATE LITERALS:</h2>
+            <div class="div__js-inner">
+                <code>`hello ${1+2+3}` = "hello 6" </code>(using "backtics" compilator detects text as
+                javascript instead of string)
+            </div>
+
+
+            <h3> Example 1:</h3>
+            <div class="div__js-inner">
+                <code>
+                    let product = "artichoke";<br><br>
+                    let price = 2.25;<br><br>
+                    let qty = 5;<br><br>
+                    `You bought ${qty} ${product}. Total is: ${price*qty}` = 'You bought 5 artichoke. Total is: 11.25'<br><br>
+                </code>
+            </div>
+            <a href="https://superuser.com/questions/254076/how-do-i-type-the-tick-and-backtick-characters-on-windows"
+                target="_blanck">Backtics</a><br><br>
+
+        </div>
+
+
+
+
+
+        <!-------------------------------------------------------------------------->
+
+
+
+
+
+        <div class="p">
+            <h2> STANDARD BUILT-IN OBJECTS: </h2>
+
+            <h2>String Methods:</h2>
+            <div class="div__js-inner">
+
+                <code>
+
+                        apellido [0] (Returns the character) <br><br>
+
+                        apellido.length (Returns the quantity of characters on the string)<br><br>
+
+                        nombre + apellido = agustinbruno (Concatenation)<br><br>
+
+                        apellido.toUpperCase() = "BRUNO" (string method).<br><br>
+
+                        let apellidoMayusc = apellido.toUpperCase() = "BRUNO" (creates a new variable and saves a modified variable inside)<br><br>
+
+                        let sentence = "the cat is under the table"<br><br>
+                        sentence.slice(4 , 8) = "cat " (Method + args () in this case, it cuts the string from 4 to 8)<br><br>
+                        let newsentence = sentence.replace("cat", "dog")<br><br>
+                        newsentence = "the dog is under the table"<br><br>
+                        sentence.repeat(2) (Repeat the number of times determined by the argument)<br><br>
+
+                        const word = "skateboard";<br><br>
+                        let facialHair = word.slice(5).replace("o","e")<br><br>
+                        "beard" (multiple methods can be used simultaneously to modify a variable)<br><br>
+                    </code>
+            </div>
+
+            <div class="a">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String"
+                    target="_blank">MDN Strings</a><br>
+                <a href="https://www.w3schools.com/js/js_string_methods.asp" target="_blank">W3S Strings</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects"
+                    target="_blank">MDN OBJECTS</a>
+            </div>
+
+            <hr>
+
+            <h2>Math Methods:</h2>
+
+            <div class="div__js-inner">
+
+
+                <code>Math.random()</code><span class="clr-comment">Creates a random decimal number from 0 to 0.99999999</span><br><br>
+                <code>Math.random() * 5</code><span class="clr-comment">Creates a random number and multiply it</span> <br><br>
+                <code>The Math.floor()</code>Function that returns the largest integer less than or equal to a
+                given
+                number.<br><br><br>
+                <code>Math.floor(Math.random()*10) </code> Generates a number up to the figure that multiplies
+                it
+                rounding
+                down<br><br>
+                <code>Math.floor(Math.random()*10) + 1 </code> Random number including the value that multiplies
+                it<br><br>
+                <code>Math.floor(Math.random()*3) +20 </code> Random number + base value <br><br>
+            </div>
+            <h3>Example 2:</h3>
+            <div class="div__js-inner">
+                <code>
+                    let number = Math.floor(Math.random()*10);<br><br>
+                    number = 7<br><br>
+        
+                    example 2:<br><br>
+        
+                    const die1 = Math.floor(Math.random() * 6) + 1; //random number from 1-6<br><br>
+        
+                    const die2 = Math.floor(Math.random() * 6) + 1; //random number from 1-6`<br><br>
+        
+                    let roll =`You rolled a ${die1} and a ${die2}. They sum to ${die1+die2} `<br><br>
+        
+                    'You rolled a 4 and a 4. They sum to 8 '<br><br>
+                </code>
+            </div>
+
+            <h3>Example 3:</h3>
+            <div class="div__js-inner">
+                <code>
+                    console.log("Welcome to the practice");<br><br>
+
+                    let random = Math.random();<br><br>
+                    if (random < 0.5) { <br><br>
+                    console.log("Number is less than 0.5") <br><br>
+                    console.log(random); <br><br>
+                    } if (random>= 0.5){<br><br>
+                    console.log ("Number is greater than 0.5")<br><br>
+                    console.log (random);<br><br>
+                }<br><br>
+                </code>
+            </div>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math"
+                target="_blank">MDN Math</a><br><br>
+        </div>
+
+
+
+
+        <!-------------------------------------------------------------------------->
+
+
+
+
+
+        <div class="p">
+            <h2>CONDITIONALS</h2>
+            <h3>IF:</h3>
+
+
+            <div class="div__js-inner">
+
+                <code>
+
+                    function isEven(num){<br><br>
+        
+                    if (num % 2 === 0)<br><br>
+                    console.log ("even");<br><br>
+                    }
+                        
+                    </code>
+
+            </div>
+
+
+            <h3>ELSE IF:</h3>
+
+
+            <div class="div__js-inner">
+                <code>
+                    const age = 9;<br><br>
+
+                    if (age < 5){ <br><br>
+                    console.log("you get for free") <br><br>
+                    } else if (age< 10){ <br><br>
+                    console.log("please pay $10") <br><br>
+                    } else if (age < 65) { 
+                    console.log("please pay $20") <br><br>
+                    } 
+                </code>
+            </div>
+
+
+
+
+            <h3>ELSE:</h3>
+            <div class="div__js-inner">
+                <code>
+                    const dayOfWeek=prompt("enter a day").toLowerCase(); <br><br>
+                    if (dayOfWeek==="monday" ) { <br><br>
+                    console.log("i hate mondays") <br><br>
+                    } else if (dayOfWeek==="saturday" ){ <br><br>
+                    console.log("i love saturdays") <br><br>
+                    } else { <br><br>
+                    console.log("meh") <br><br>
+                    }<br><br>
+                </code>
+            </div>
+
+
+            <h3>Exercise Conditionals "Get Color":</h3>
+
+            <div class="div__js-inner">
+                <code>
+                    function getColor(phrase){ <br><br>    
+                    if (phrase==="stop" ){ <br><br>
+                    console.log("red") <br><br>
+                    } else if (phrase==="slow" ){ <br><br>
+                    console.log("yellow") }<br><br>
+                    else if (phrase==="go" ){ <br><br>
+                    console.log("green") <br><br>
+                    } else { console.log("purple") <br><br>
+                    }<br><br>
+                    }<br><br>
+                </code>
+            </div>
+
+            <h3> NESTING:</h3>
+            <div class="div__js-inner">
+                <code>
+                    const password = prompt("enter password");<br><br>
+                    <br><br>
+                    if (password.length >=6) {<br><br>
+                        <br><br>
+                        &nbspif(password.indexOf(" ") === -1){   // indexOf(" ") means space on the string // -1 means "no match found"<br><br>
+                        &nbsp&nbspconsole.log("valid password");<br><br>
+                        &nbsp} else {<br><br>
+                            &nbsp&nbspconsole.log("password cannot contain spaces");<br><br>
+                            &nbsp}<br><br>
+                    } else {<br><br>
+                        &nbspconsole.log("password too short, must contain 6 character")<br><br>
+                    }
+             </code>
+
+            </div>
+
+            <h2>&& (and)</h2>
+
+            <div class="div__js-inner">
+                <code>
+                    const password = prompt("enter your password");<br><br>
+        if (password.length >= 6 && password.indexOf(" ") === -1) { (considers both logics)<br><br> 
+            console.log("valid")<br><br>
+        } else {<br><br>
+            console.log("invalid")<br><br>
+        }
+                </code>
+            </div>
+            <h2>|| (or)</h2>
+            <div class="div__js-inner">
+                <code>
+                   const age = 9;<br><br>
+        if (age >= 0 && age < 5 || age >= 65) { (considers one of both logics)<br><br> 
+            console.log("free");<br><br>
+        } else if (age >=5 && age < 10) {<br><br>
+            console.log("$10")<br><br>
+        } else if (age >= 10 && age < 65) {<br><br>
+            console.log("$20")<br><br>
+        } else {<br><br>
+            console.log("invalid")<br><br>
+        }<br><br>
+               </code>
+            </div>
+
+            <h2>! (not)</h2>
+           <div class="div__js-inner">
+               <code>
+                    let firstName = prompt ("enter your first name");<br><br>
+        if (!firstName) {  //meaning entry was false or empty<br><br>
+            firstName = prompt("try again");<br><br>
+        }<br><br>
+               </code>
+           </div>
+
+           <h2>Switch:</h2>
+            <p>
+                Will search through the cases and execute when finds the variable. 
+                Without the break it will continue to execute the next ones until the end or a break.
+            </p>
+
+            <div class="div__js-inner">
+
+                <code>
+                    const day = 1;<br>
+        switch (day){<br><br>
+            case 1:<br><br>
+                console.log("monday");<br>
+                break;<br><br>
+            case 2:<br><br>
+                console.log("tuesday");<br>
+                break;<br><br>
+            case 3:<br><br>
+                console.log("wednesday");<br>
+                break;<br><br>
+            case 4:<br><br>
+                console.log("thursday");<br>
+                break;<br><br>
+            case 5:<br><br>
+                console.log("friday");<br>
+                break;<br><br>
+            case 6:<br><br>
+            case 7:<br><br>
+                console.log("weekend");<br>
+            default:<br><br>
+                console.log("i dont know")  <br><br>
+                </code>
+            </div>                  
+        </div>
+
+        <!-------------------------------------------------------------------------->
+
+        <div class="p">
+            <h2>ARRAYS :</h2> 
+            <p>Data structure that colects information</p>
+            
+            <h3>Methods:</h3>
+
+            <ul class="ul__js-array">
+                <li class="li__js-array">PUSH:   adds an element to the queue of the array.</li>
+                <li class="li__js-array">POP:    removes the last element of the array</li>
+                <li class="li__js-array">SHIFT:  removes the first elemnt of the array</li>
+                <li class="li__js-array">UNSHIFT:  adds a new element to the beggining of the array</li>
+                <li class="li__js-array">CONCAT:   merges arrays</li>
+                <li class="li__js-array">INCLUDES:  display boolean condition</li>
+                <li class="li__js-array">indexOf:  display the element searched (if there is not, will be -1)</li>
+                <li class="li__js-array">REVERSE:  backflip the queue</li>
+                <li class="li__js-array">SLICE:    copy and paste to the new variable from the 0 to the number between ()</li>
+                <li class="li__js-array">SPLICE:   delete elements from the array</li>
+                <li class="li__js-array">SORT:  rearanges the array using some critearia.</li>
+            </ul>
+            <div class="div__js-inner">
+                <code>
+                    let colors = ["red", "orange", "yellow"];<br><br>
+                    colors[0] = "red";<br><br>
+                    colors[1] = "orange";<br><br>
+                    colors[2] = "yellow"; <br><br>
+                    <span class="clr-comment">//new items can be added or modified writing the variable name + the numeral of the array = the new one or just call them out with the numeral</span> <br><br>
+                                 
+                                  
+                    colors[5];    <span class="clr-comment">//undefined</span><br><br>
+                    colors[5] = "blue"<br><br>
+                    //["red","orange","yellow", empty x 2, "blue"]<br><br>
+                    <span class="clr-comment">//to display an array on console just write the variable, to know length, variable.length</span><br><br>
+                    let lottNums = [19,22,56,12,51];<br><br>
+            
+                    lottNums.push(5)<br><br>
+                    [19,22,56,12,51,5] <span class="clr-comment">//PUSH method added an element to the queue of the array</span><br><br>
+                    lottNums.pop();<br><br>
+                    [19,22,56,12,51] <span class="clr-comment">//POP method removed the last element of the array</span><br><br>
+                    lottNums.shift();<br><br>
+                    [22,56,12,51] <span class="clr-comment">//SHIFT method removed the first elemnt of the array</span><br><br>
+                    lottNums.unshift(76);<br><br>
+                    [79,22,56,12,51] <span class="clr-comment">//UNSHIFT method added a new element to the beggining of the array</span><br><br><br><br>
+            
+            
+                    //ej<br><br>
+                    const planets = ['The Moon','Venus', 'Earth', 'Mars', 'Jupiter']; <span class="clr-comment">//DO NOT TOUCH THIS LINE!</span><br><br>
+                    planets.shift(); <span class="clr-comment">//"The Moon" out</span><br><br>
+                    planets.push("Saturn"); <span class="clr-comment">//"Saturn" into queue</span><br><br>
+                    planets.unshift("Mercury"); <span class="clr-comment">//"Mercury" in to start</span><br><br><br><br>
+        
+                    let cats= ["blue","kitty"];<br><br>
+                    let dogs= ["rusty","wyatt"];<br><br>
+                    let comboParty = dogs.concat(cats); <span class="clr-comment">//CONCAT method merges arrays</span><br><br>
+                    comboParty <br><br>
+                    ["rusty","wyatt","blue","kitty"]<br><br>
+                    cats.includes("blue");<br><br>
+                    true<br><br>
+                    cats.includes("Blue"); <span class="clr-comment">//INCLUDES method display boolean condition</span><br><br>
+                    false<br><br><br><br>
+        
+                    cats.indexOf("kitty") <span class="clr-comment">//indexOf method display the element searched (if there is not, will be -1)</span><br><br>
+                    1<br><br><br><br>
+        
+                    comboParty.reverse(); <span class="clr-comment">//REVERSE method... backflip the queue</span><br><br>
+                    (4) ['kitty', 'blue', 'wyatt', 'rusty']<br><br><br><br>
+        
+                    let colors = ["red", "orange", "yellow","green","blue","indigo","violet"];<br><br>
+                    let coolColors = colors.slice(3) <span class="clr-comment">//SLICE method copy and paste to the new variable from the 0 to the number between ()</span><br><br>
+                    coolColors<br><br>
+                    (4) ['green', 'blue', 'indigo', 'violet']<br><br>
+                    colors.slice(2,4) <span class="clr-comment">//SLICE from #2 to #3</span> <br><br>
+                    (2) ['yellow', 'green']<br><br>
+                    colors.slice(-3); <span class="clr-comment">//SLICE counting elements from the end</span><br><br>
+                    (3) ['blue', 'indigo', 'violet']<br><br><br><br>
+        
+                    colors.splice(5,1) <span class="clr-comment">//(5#,1 quantity of elemnts to delete)</span><br><br>
+                    ['indigo'] <span class="clr-comment">//SPLICE method, deleted 1 element from the array</span><br><br>
+                    colors.splice(3,0,"ambar","magenta");  <span class="clr-comment">//added 2 new elements starting from the #given</span><br><br>
+                    colors<br><br>
+                    (9) ['red', 'orange', 'yellow', 'ambar', 'magenta', 'green', 'blue', 'indigo', 'violet']<br><br><br><br>
+        
+                    colors.sort(); <span class="clr-comment">//SORT method, rearanged the array using some critearia.</span><br><br>
+                    (9) ['ambar', 'blue', 'green', 'indigo', 'magenta', 'orange', 'red', 'violet', 'yellow']<br><br><br><br>
+        
+                    <span class="clr-comment">//NESTED ARRAYS</span><br><br>
+                    const gameBoard = [["x","o","x"],["o","null","x"],["o","o","x"]]<br><br><br><br>
+        
+                    gameBoard<br><br>
+                    (3) [Array(3), Array(3), Array(3)]<br><br>
+                    0: (3) ['x', 'o', 'x']<br><br>
+                    1: (3) ['o', 'null', 'x']<br><br>
+                    2: (3) ['o', 'o', 'x']<br><br>
+                    length: 3<br><br>
+                    [[Prototype]]: Array(0)<br><br><br><br>
+        
+                    gameBoard[1] //display the array #1<br><br>
+                    (3) ['o', 'null', 'x']<br><br><br><br>
+        
+                    gameBoard[1][1] //display the element #1 on array #1<br><br>
+                    'null'<br><br><br><br>
+        
+                    <span class="clr-comment">//Exercise NESTED ARRAYS</span><br><br><br><br>
+        
+                    const airplaneSeats = [<br><br>
+                        ['Ruth', 'Anthony', 'Stevie'],<br><br>
+                        ['Amelia', 'Pedro', 'Maya'],<br><br>
+                        ['Xavier', 'Ananya', 'Luis'],<br><br>
+                        ['Luke', null, 'Deniz'],<br><br>
+                        ['Rin', 'Sakura', 'Francisco']<br><br>
+                    ];<br><br><br><br>
+        
+                    airplaneSeats[3].splice(1,1,"Hugo"); <span class="clr-comment">//located on the #3 array, executed method splice placing on the #1, deleting 1, adding new string.</span><br><br><br><br>
+        
+                    airplaneSeats<br><br>
+                    (5) [Array(3), Array(3), Array(3), Array(3), Array(3)]<br><br>
+                    0: (3) ['Ruth', 'Anthony', 'Stevie']<br><br>
+                    1: (3) ['Amelia', 'Pedro', 'Maya']<br><br>
+                    2: (3) ['Xavier', 'Ananya', 'Luis']<br><br>
+                    3: (3) ['Luke', 'Hugo', 'Deniz']<br><br>
+                    4: (3) ['Rin', 'Sakura', 'Francisco']<br><br>
+                    length: 5<br><br>
+                    [[Prototype]]: Array(0)<br><br><br><br>
+                    
+                
+                    </code>
+                </div>
+
+
+
+
+                    <h2>OBJECTS</h2>
+                    <p>The Object type represents one of JavaScript's data types. It is used to store various keyed collections and more complex entities</p>
+                <div class="div__js-inner">
+                        <code>
+                    
+                    //example:<br><br>
+                    const kitchenSink = {<br><br>
+                        favNum: 2412442,<br><br>
+                        material: ["metal", "ceramic"],<br><br>
+                        warranty: true<br><br>
+                    }<br><br><br><br>
+        
+                    const user = {name:"agustin",surename:"bruno"} <span class="clr-comment">//variable data enclosed with curly brackets {}</span><br><br><br><br>
+        
+                    //exercise<br><br>
+                    const product = {name:"Gummy Bears",inStock:true,price:1.99,flavors:["grape","apple","cherry"]}<br><br><br><br>
+        
+                    //extract data from objects<br><br>
+                    const years = {1999:"good", 2020:"bad"};<br><br><br><br>
+        
+                    years["1999"]<br><br>
+                    "good"<br><br><br><br>
+        
+                    years[1999]<br><br>
+                    "good"<br><br><br><br>
+        
+                    const happy= {birthday:"today",newyear:"yesterday"};<br><br><br><br>
+        
+                    happy.birthday<br><br>
+                    'today'<br><br><br><br>
+        
+        
+                    //EXERCISE <br><br><br><br>
+        
+                    const restaurant = {<br><br>
+                        name: 'Ichiran Ramen',<br><br>
+                        address: `${Math.floor(Math.random() * 100) + 1} Johnson Ave`,<br><br>
+                        city: 'Brooklyn',<br><br>
+                        state: 'NY',<br><br>
+                        zipcode: '11206',<br><br>
+                    }<br><br><br><br>
+        
+                    const fullAddress = restaurant.address+ restaurant.city+ restaurant.state+ restaurant.zipcode<br><br><br><br>
+        
+                    '90 Johnson AveBrooklynNY11206'<br><br><br><br>
+        
+                    //MODIFYING OBJECTS<br><br><br><br>
+        
+                    const midterms = {danielle:96, thomas:78}<br><br>
+                    midterms.thomas = 79 <span class="clr-comment">//modified score to 79</span><br><br>
+                    midterms.ezra<br><br>
+                    midterms.ezra = 60<br><br>
+                    midterms["antonio"]<br><br>
+                    midterms["antonio"] = 100<br><br>
+                    midterms<br><br>
+                    {danielle: 96, thomas: 79, ezra: 60, antonio: 100}<br><br><br><br>
+        
+                    //OBJECTS & ARRAY NESTING<br><br><br><br>
+        
+                    const shoppingCart= [<br><br>
+                        {<br><br>
+                            product: "jenga classic",<br><br>
+                            price: 6.88,<br><br>
+                            quantity: 1,<br><br>
+                        
+                        }<br><br>
+                        {<br><br>
+                            product: "Echo Dot",<br><br>
+                            price: 29.99,<br><br>
+                            quantity: 3<br><br>
+                        }<br><br>
+                    ]<br><br><br><br>
+                    
+                    const student = {<br><br>
+                        firstName: "david",<br><br>
+                        strengths:["music","art"],<br><br>
+                        exams: {<br><br>
+                            midterm:92,<br><br>
+                            final:88<br><br>
+                        }<br><br>
+                    }<br><br>
+                </code>
+            </div>
+    
+    
+
+        </div>  
+
+
+        <div class="p">
+            <h2> LOOPS:</h2>
+            <p>Structure:<br>
+                for ([initialExpression]; [conditionExpression]; [incrementExpression])<br>
+                statement</p>
+            <div class="div__js-inner">
+                <p>Example 1: Count to 10</p>
+                for (let num = 1; num <= 10; num += 1) { <span class="clr-comment">(creates a variable called num, if num less or equal to 10 , 1 is added to the num)</span><br><br>
+                    console.log(num);<br>
+                }<br><br><br>
+
+                <p>Example 2: Repeat text</p>
+                const n = 5;<br><br>
+                for (let i = 1; i <= n; i++) {<br><br>
+                console.log(`I love JavaScript.`);<br><br>
+                }<br><br><br>
+
+
+                <p>INFINITE LOOP , WARNING!!</p>
+
+                for (let i = 1; i >= 1; i ++){ <br><br>
+                    console.log(i);<br><br>
+                } <br><br><br>
+
+                // ======================<br>
+                // ITERATING OVER ARRAYS!<br>
+                // ======================<br><br><br>
+                
+                const animals = [<br>
+                    "Aardvark",<br>
+                    "Aardwolf",<br>
+                    "African Elephant",<br>
+                    "African Tree Pangolin",<br>
+                    "Alligator",<br>
+                    "Alpaca",<br>
+                    "Anteater",<br>
+                    "Antelope",<br>
+                    "Ape(s)",<br>
+                    "Arabian Horse",<br>
+                    "Armadillo",<br>
+                    "Arthropod(s)",<br>
+                    "Asian Elephant",<br>
+                    "Aye-Aye"<br>
+
+                ]<br><br>
+
+                for (let i = 0; i < animals.length; i++) {<br>
+                    console.log(i, animals[i])<br>
+                }<br><br>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-----------NODE JS-------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+    <div class="topic">
+        <h1 id="nodejs">NODE JS</h1>
+
+        <div class="p">
+            <h2>Description:</h2>
+            <p> Node.js lets developers use JavaScript to write command line tools and for server-side
+                scripting to produce dynamic web page content before the page is
+                sent to the user's web browser. <br><br>
+
+
+                <a href="https://en.wikipedia.org/wiki/Node.js" target="_blank"> Wiki: NODE</a>
+            </p>
+        </div>
+
+
+
+
+
+        <h2>TERMINAL Git Bash </h2>
+
+        <div class="p">
+            <table>
+
+
+                <tr>
+                    <th>commands:</th>
+                </tr>
+                <tr>
+                    <td>mkdir : </td>
+                    <td>creates new folder</td>
+                </tr>
+                <tr>
+                    <td>mkdir ../ : </td>
+                    <td>creates folder upwards</td>
+                </tr>
+                <tr>
+                    <td>touch </td>
+                    <td>files will be created on the directory</td>
+                </tr>
+                <tr>
+                    <td>rm </td>
+                    <td>permanently remove selected files</td>
+                </tr>
+                <tr>
+                    <td>rmdir </td>
+                    <td>removes empty folders</td>
+                </tr>
+                <tr>
+                    <td>rm -rf </td>
+                    <td>removes all</td>
+                </tr>
+
+                <tr>
+                    <td>ls: </td>
+                    <td>stands for "list", similar to "dir"</td>
+                </tr>
+                <tr>
+                    <td>pwd: </td>
+                    <td>"print working directory"</td>
+                </tr>
+                <tr>
+                    <td>cd : </td>
+                    <td>"change directory"</td>
+                </tr>
+                <tr>
+                    <td>cd .. : </td>
+                    <td> backwards</td>
+                </tr>
+                <tr>
+                    <td>cd ~ : </td>
+                    <td> home directory</td>
+                </tr>
+                <tr>
+                    <td>cd / : </td>
+                    <td>root directory</td>
+                </tr>
+                <tr>
+                    <td>cd c/: </td>
+                    <td>to C </td>
+                </tr>
+                <tr>
+                    <td>cd ../../Pets : </td>
+                    <td>backs out to the directory required, relative path</td>
+                </tr>
+                <tr>
+                    <td>absolute path: </td>
+                    <td>cd /Users/coltsteele </td>
+                </tr>
+                <tr>
+                    <td>explorer . : </td>
+                    <td>open the instalation folder of git bash</td>
+                </tr>
+
+                <tr>
+                    <td>"command" --help</td>
+                    <td>command list</td>
+                </tr>
+            </table>
+
+            <h3>Create new files:</h3>
+            <p>Touch index.html app.css app.js files will be created on the directory</p>
+        </div>
+
+
+
+
+        <div class="p">
+            <h2>Code index.js to load index.html and resources</h2>
+            <div class="div__js-inner">
+                <code>
+                    const express = require('express');<br><br>
+                    const app = express();<br><br>
+                    const router = express.Router();<br><br>
+                    
+                    app.use('/public', express.static('./public'));<br><br>
+                    
+                    app.get('/',function(req,res) {<br><br>
+                        res.sendFile(__dirname + '/index.html');<br>
+                    });<br><br>
+                    
+                    router.get('/', (req,res) => {<br><br>
+                        const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;<br><br>
+                        console.log(ip); // ip address of the user<br>
+                    });<br><br>
+                    
+                    app.use('/', router);<br><br><br><br>
+                    
+                    
+                    app.listen(80, () => {<br><br>
+                        console.log('Serving on port 80')<br>
+                    })<br><br>
+                
+                </code>
+            </div>
+        </div>
+
+
+
+        <h2>WEB SERVER:</h2>
+        <div class="p">
+            <ul>
+                <h2>Starting server:</h2>
+                <ol>
+                    <h5>LOCAL:</h5>
+                    <li>Open Git Bash</li>
+                    <li>Set directory to the index.js</li>
+                    <li>Execute it with NODEMON</li>
+                    <br>
+                    <br>
+                    <img src="public/StartServerNODE.jpg">
+                </ol><br>
+
+
+                <ol>
+                    <h5>ONLINE (with Ngrok):</h5>
+                    <li>Open CMD as admin</li>
+                    <li>Set directory to Ngrok.exe</li>
+                    <li>Execute ngrok HTTP 80</li>
+                    <br>
+                    <br>
+                    <img src="public/NgrokEXE.jpg"><br><br>
+                    <img src="public/NgrokHTTP80.jpg"><br><br>
+                    <img src="public/ServerUP.jpg"><br><br>
+                </ol>
+
+
+            </ul>
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <script src="public/scripts.js"></script>
+
+</body>
+
+</html>

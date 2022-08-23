@@ -1,0 +1,53 @@
+
+#position{
+    position: absolute;
+}
+#clock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    height: 30px;
+    width: 60px;
+    background-color: red;
+    border: 5px solid #003049
+}
+
+.h,.m {
+    display: block;
+    
+    text-align: center;    
+    width: 10px;
+    height: 20px;
+    
+    border-width: 1%;
+}
+.colon{
+    width: 10px;
+    height: 20px;
+    margin: 0;
+    padding: 0px;
+    border-width: 1%;
+}
+
+<div id="position">
+            <div id="clock">
+                <div class="h">
+                    <div id="hour"></div>
+            
+                    <script>
+                        const h = new Date();
+                        document.getElementById("hour").innerHTML = h.getHours();
+                    </script>
+                </div>
+                <div class = "colon"><h2>:</h2></div>
+                <div class = "m">
+                    <div id="minute"></div>
+        
+                    <script>
+                        const m = new Date();
+                        document.getElementById("minute").innerHTML = m.getMinutes();
+                    </script>
+                </div>
+            </div>
+        </div>
