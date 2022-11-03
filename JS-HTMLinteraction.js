@@ -5001,9 +5001,66 @@ touch index.ejs
 
 </body>
 
-//in index.js
+//in index.js (renders index.ejs , which display all products)
 
 res.render("products/index", { products })
+
+//index.ejs
+<body>
+    <h1>All Products</h1>
+    <ul>
+        <% for(let product of products) { %>
+        <li><%= product.name %></a> </li>  //will be printed a list of the products from the db
+        <% }%>
+    </ul>
+    
+</body>
+
+
+//index.js
+
+
+app.get('/products/:id', async (req, res) => { 
+    const { id } = req.params;
+    const product = await Product.findById(id)
+    console.log(product);
+    res.send("details page") //will be printed on the result page
+})
+
+
+
+//index.ejs (updated, now display names as links)
+
+<h1>All Products</h1>
+<ul>
+    <% for(let product of products) { %>
+    <li><a href="/products/<%=product._id%>"><%= product.name %></a> </li>
+    <% }%>
+</ul>
+
+//show.ejs (it is displayed on products/:id)
+
+<h1><%= product.name %></h1>
+    <ul>
+        <li>Price: $<%= product.price%></li>
+        <li>Category: <%= product.category%></li>
+    
+</ul>
+<a href="/products">All Products</a>
+
+//index.js (updated to render show.ejs)
+
+app.get('/products/:id', async (req, res) => {
+    const { id } = req.params;
+    const product = await Product.findById(id)
+    res.render('products/show', { product })
+})
+
+
+
+
+
+
 
 
 //index.ejs original
